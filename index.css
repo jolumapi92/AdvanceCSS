@@ -27,6 +27,8 @@ body {
     bottom: 90px;
     color: white;
     right: 20px;
+    animation-name: movingUp;
+    animation-duration: 3s;
 }
 
 .header {
@@ -38,6 +40,46 @@ body {
     clip-path: polygon(0% 0%, 100% 50%, 100% 100%, 0 100%);
 }
 
+.box-author {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.author {
+    color: white;
+    animation-name: movingLeft;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes movingLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes movingUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 @media (min-width: 720px) {
     .header {
         height: 95vh;
@@ -45,7 +87,7 @@ body {
         background-size: cover;
         background-position: top;
         position: relative;
-        clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0 100%);
+        clip-path: polygon(20% 10%, 100% 0%, 100% 100%, 0 100%);
     }
     .paragragh {
         display: none;
