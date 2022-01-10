@@ -1,3 +1,3 @@
-"use strict";
-console.log("Joselito");
-alert("Juan de DIos");
+import { Person } from "./person.js";
+let jose = new Person("Jose", 29);
+console.log(jose);

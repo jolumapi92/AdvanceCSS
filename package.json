@@ -1,0 +1,26 @@
+{
+  "name": "githubcourse",
+  "version": "1.0.0",
+  "description": "Este es un repositorio de pruebasgit add .\r Este es un nuevo cambio\r Otro cambi\r JOJOJO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolumapi92/AdvanceCSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jolumapi92/AdvanceCSS/issues"
+  },
+  "homepage": "https://github.com/jolumapi92/AdvanceCSS#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jsdom": "^19.0.0"
+  }
+}
